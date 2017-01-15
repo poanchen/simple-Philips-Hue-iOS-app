@@ -13,6 +13,9 @@ class ViewController: UIViewController {
     
     var currentStatus = false
     
+    @IBOutlet weak var brightnessSliderValue: UILabel!
+    @IBOutlet weak var brightnessSlider: UISlider!
+    
     func put(url: URL, body: NSMutableDictionary, completionHandler: @escaping (Data?, URLResponse?, Error?) -> Void) throws {
         var request: URLRequest = URLRequest(url: url)
         request.httpMethod = "PUT"
@@ -69,6 +72,19 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
     }
 
+    @IBAction func brightnessSliderValueChanged(_ sender: UISlider) {
+        let brightnessSliderValue = Int(sender.value)
+        self.brightnessSliderValue.text = brightnessSliderValue.description
+        
+        let urlForPut: URL = URL(string: "http://192.168.1.64/api/MAwfbzshj18WUCafSSU6AqQjT6dNiaGlTpJYs6n4/lights/3/state")!
+        let body: NSMutableDictionary = NSMutableDictionary()
+        
+        body.setValue(brightnessSliderValue, forKey: "bri")
+        
+        try! self.put(url: urlForPut, body: body, completionHandler: { data, response, error in
+        })
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
