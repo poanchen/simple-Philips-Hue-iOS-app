@@ -193,6 +193,7 @@
 				TargetAttributes = {
 					8F14C13B1E2AF6D8005D39EA = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = H7C74Q6JAM;
 						ProvisioningStyle = Automatic;
 					};
 					8F14C14F1E2AF6D8005D39EA = {
@@ -410,6 +411,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = H7C74Q6JAM;
 				INFOPLIST_FILE = hue/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jenrenalcare.hue;
@@ -422,6 +424,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = H7C74Q6JAM;
 				INFOPLIST_FILE = hue/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jenrenalcare.hue;
