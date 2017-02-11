@@ -415,6 +415,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = H7C74Q6JAM;
 				INFOPLIST_FILE = hue/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -428,6 +429,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = H7C74Q6JAM;
 				INFOPLIST_FILE = hue/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -510,6 +512,7 @@
 				8F14C1661E2AF6D8005D39EA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8F14C1671E2AF6D8005D39EA /* Build configuration list for PBXNativeTarget "hueTests" */ = {
 			isa = XCConfigurationList;
@@ -518,6 +521,7 @@
 				8F14C1691E2AF6D8005D39EA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8F14C16A1E2AF6D8005D39EA /* Build configuration list for PBXNativeTarget "hueUITests" */ = {
 			isa = XCConfigurationList;
@@ -526,6 +530,7 @@
 				8F14C16C1E2AF6D8005D39EA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
